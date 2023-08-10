@@ -2,6 +2,7 @@
 
 var=input('Insira um valor:')
 
+print('O tipo primitivo desse valor é:', type(var))
 print('É númerico?', var.isnumeric())
 print('É alfabético?', var.isalpha())
 print('É decimal?', var.isdecimal())
