@@ -1,0 +1,40 @@
+* 'Curso de Python' é uma cadeia de caracteres ou cadeia de texto (string)
+*    - Para o Python toda cadeia de texto está entre aspas simples ou aspas duplas.
+* O que iremos aprender nessa aula são modos de manipular essa cadeia de texto para termos funcionalidades especificas para resolver problemas vindouros.
+
+# FATIAMENTO
+    * frase = "Curso de Python"
+    * frase[9] ---> exibe o caratectere na posição 9 (nesse caso o décimo caractere já que a lista começa com 0)
+    * frase[9:21] ---> vai do 9 ao 21
+    * frase[9:21:2] ---> vai do 9 ao 21 pulando de um em um.
+    * frase[:5]; frase[15:] ---> no primeiro caso vai do começo ao 5 e no segundo caso vai do 15 ao final.
+     *frase[9::3] ---> Vai do 9 até o final e do final até o 3.
+
+# ANÁLISE
+    * len(frase) ---> len vem de 'lenght', ou seja, comprimento. usado para sabermos o tamanho da string.
+    * frase.count('o') ---> conta a quantidade de 'o' na cadeia de caracteres.
+    * frase.count('o', 0, 13) ---> contagem junto com fatiamento, nesse caso do exemplo, quantos 'o' existe do caractere 0 ao caractere 12.
+    * frase.find('deo') ---> me diz em que posição 'deo' teve início na minha cadeia de caracteres.
+        *Exemplo: frase.find('Android') ---> NÃO existe 'ANDROID' na minha cadeia de caracteres, portanto, o programa me entregará -1 como resultado.
+    * 'Curso" in frase ---> diz se existe ou não o trecho 'Curso" na cadeia com TRUE ou FALSE.
+
+#TRANSFORMAÇÃO
+   * frase.replace('Python', 'Android') ---> Substitui 'Python' por 'Android' 
+   * frase.upper() ---> Transforma o que não for maiúsculo em maiúsculo.
+   * frase.lower() ---> Faz o contrário do upper.
+   * frase.capitalize() ---> Transforma todos os caracteres em minúsculo, e deixa o primeiro caractere (o de posição 0) em maiúsculo.
+   * frase.title() ---> Transforma todas as primeiras letras das palavras da cadeia em maiúscula.
+   * frase.strip() ---> Remove todos os espaços inúteis da cadeia de caracteres, preservando os úteis. (aqueles espaços do início e do final da frase, geralmente).
+   * frase.rstrip() ---> r strip, r de right. Só remove os espaços do lado direito.
+   * frase.lstrip() ---> Preciso escrever?
+
+#DIVISÃO
+    * frase.split() ---> Divisão feitas nos espaços da cadeia. Tem mais funções colocando alguns parâmetros dentro dos parênteses. Gera uma lista nova para cada palavra da cadeia de caracteres.
+
+#JUNÇÃO
+    * '-'.join(frase) ---> o caractere entre as aspas indica o caractere que unirá as palavras numa só cadeira.
+        ex.: Curso, de, Python ---> Curso-de-Python.
+    Caso queira colocar espaço entre as palavras, é só usar espaço ao invés de '-'.
+
+#EXEMPLOS DA aula
+    * Disponíveis em exemplo-aula#005.py
