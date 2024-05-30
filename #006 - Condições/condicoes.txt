@@ -1,0 +1,29 @@
+* Exemplo da aula: 
+    - carro.siga() ---> O carro é o nosso objeto, o siga é o nosso método e como todo método, tem parenteses no final.
+
+/*** CONDIÇÕES ***\
+
+    - Até agora, todos os exercícios do curso foram sequenciais. Porém, com essa aula seremos apresentados ao conceito de condição.
+
+1) ESTRUTURA CONDICIONAL:
+
+    EXEMPLO: 
+    if carro.esquerda():
+        blocoTrue
+    else:
+        blocoFalse
+
+    - Essa é uma representação de uma ESTRUTURA CONDICIONAL. Numa condição, ou o bloco VERDADEIRO é executado ou o bloco FALSO é executado. NUNCA serão executados ao mesmo tempo.
+
+    EXEMPLO:
+        tempo = int(input('Quantos anos tem seu carro?'))
+        if tempo <= 3:
+            print('carro novo')
+        else:
+            print('carro velho)
+        print('--- FIM ---')
+
+    CONDIÇÃO SIMPLIFICADA:
+        tempo = int(input('Quantos anos tem seu carro?'))
+        print('carro novo' if tempo<=3 else 'carro velho')
+        print('--- FIM ---')
