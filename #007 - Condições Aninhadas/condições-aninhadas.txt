@@ -1,0 +1,36 @@
+* Condições aninhadas são estruturas condicionais dentro de estruturas condicionais.
+
+    - ESTRUTURA CONDICIONAL ANINHADA:
+
+    EXEMPLO:
+    se carro.esquerda()
+        carro.siga()
+        carro.direita()
+        carro.siga()
+        carro.direita()
+        carro.esquerda()
+        carro.siga()
+        carro.direita()
+        carro.siga()
+    senão se carro.direita()
+        carro.siga()
+        carro.esquerda()
+        carro.siga()
+        carro.esquerda()
+        carro.siga()
+    senão
+        carro.siga()
+    carro.pare()
+
+    TRAZENDO PARA O PYTHON:
+    if carro.esquerda():
+        [BLOCO 1]
+    elif carro.direita():
+        [BLOCO 2]
+    *elif carro.re():
+        [BLOCO 3]
+    else:
+        [BLOCO 4]
+    
+    ---> Dentro de um if, podemos usar quantos elif forem necessários, e apenas um (ou nenhum) else SEMPRE no final.
+        *NUNCA podemos utilizar um elif sem um if.
